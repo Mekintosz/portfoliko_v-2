@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="dark" data-theme="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Task Manager App | Project Details</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/styles/project-details.css" />
+  </head>
+  <body class="project-page">
+    <div class="project-layout">
+      <header class="project-header">
+        <div class="project-header__inner">
+          <div class="project-header__identity">
+            <span class="project-brand">Task Manager App</span>
+          </div>
+          <nav class="project-nav" aria-label="Project navigation">
+            <a
+              class="project-nav__link project-nav__link--back"
+              href="../index.html#projects"
+              data-back-to-portfolio
+            >
+              Back to Portfolio
+            </a>
+            <a
+              class="project-nav__link"
+              data-target="overview"
+              href="#overview"
+              aria-current="true"
+            >
+              Overview
+            </a>
+            <a
+              class="project-nav__link"
+              data-target="technology-stack"
+              href="#technology-stack"
+            >
+              Technology
+            </a>
+            <a
+              class="project-nav__link"
+              data-target="key-features"
+              href="#key-features"
+            >
+              Features
+            </a>
+            <a
+              class="project-nav__link"
+              data-target="visual-showcase"
+              href="#visual-showcase"
+            >
+              Gallery
+            </a>
+            <a
+              class="project-nav__link"
+              data-target="development-process"
+              href="#development-process"
+            >
+              Process
+            </a>
+            <a
+              class="project-nav__link"
+              data-target="results-impact"
+              href="#results-impact"
+            >
+              Results
+            </a>
+          </nav>
+          <div class="project-header__actions">
+            <button
+              class="project-theme-toggle"
+              id="theme-toggle"
+              type="button"
+              aria-label="Toggle theme"
+            >
+              <span class="material-symbols-outlined">light_mode</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="project-main">
+        <section class="project-section" id="overview">
+          <div class="project-section__inner project-hero">
+            <div class="project-hero__heading">
+              <h1 class="project-hero__title">Task Manager App</h1>
+              <p class="project-hero__subtitle">
+                A productivity companion that keeps teams aligned with shared
+                workspaces, smart reminders, and progress insights across every
+                device.
+              </p>
+              <div class="project-tags" aria-label="Technology tags">
+                <span class="project-tag">Vue</span>
+                <span class="project-tag">Firebase</span>
+                <span class="project-tag">Pinia</span>
+                <span class="project-tag">Tailwind CSS</span>
+              </div>
+            </div>
+            <div
+              class="project-hero__media"
+              role="img"
+              aria-label="Task management dashboard highlighting weekly tasks"
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBFYyBdmvgldgKFkDw_ZqgUUtFLw0yH6PhCxDQx_3XZQjnHU4AUUNBEKD9lh0nZrSa5cGEcYxgfHQN1US7rcJNC7-z6SOER8Ak9AJWdH3NcJhUxvS9s9sm3xn4CP9JmVXwkogBVikGXez0oeOs4ykRjhtH0fdc59fPKkDsdmMMqghoz3Wqdfx-D7BrmH2iFnPoR7OKnjZMwQvuQ3Bt4YJtTsNOibZM-_uSeezBfNCcS_5FWYtIYjyPR01tou-RRc-TG8Kl4uLMI5niT');"
+            ></div>
+          </div>
+        </section>
+
+        <section class="project-section" id="project-overview">
+          <div class="project-section__inner project-body">
+            <p>
+              Built for remote teams juggling multiple projects, the app makes
+              light work of deadlines and accountability. I created the
+              real-time collaboration features, ensured offline resilience, and
+              designed a component library that adapts from mobile to desktop
+              seamlessly.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section" id="technology-stack">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Technology Stack</h2>
+            <p>
+              Vue 3's composition API provides a clean architectural backbone,
+              while Pinia manages shared state between boards, tasks, and user
+              preferences. Firebase powers authentication, Firestore real-time
+              data, and Cloud Functions for scheduled reminders. Tailwind's
+              utility classes were converted into the portfolio's vanilla CSS
+              token system for consistency.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section" id="key-features">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Key Features</h2>
+            <div class="project-feature-list">
+              <article class="project-feature">
+                <h3>Shared Workspaces</h3>
+                <p>
+                  Organize projects into boards with drag-and-drop prioritization
+                  and visibility controls that keep cross-functional teams in
+                  sync.
+                </p>
+              </article>
+              <article class="project-feature">
+                <h3>Smart Reminder Engine</h3>
+                <p>
+                  Custom reminders leverage Cloud Functions to nudge owners when
+                  due dates slip, factoring in working hours and task
+                  dependencies.
+                </p>
+              </article>
+              <article class="project-feature">
+                <h3>Progress Insights</h3>
+                <p>
+                  Built-in analytics highlight velocity, blockers, and task
+                  distribution so leads can rebalance workload quickly.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section" id="visual-showcase">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Visual Showcase</h2>
+            <div class="project-gallery">
+              <img
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+                alt="Team collaborating while reviewing tasks on a laptop"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80"
+                alt="Kanban board displayed on tablet and phone"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1600&q=80"
+                alt="Illustration of productivity dashboard with charts"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section" id="development-process">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Development Process</h2>
+            <p>
+              We kicked off with user interviews to define the jobs-to-be-done,
+              then ran weekly usability tests to validate flows. Component-first
+              development in Storybook accelerated iteration, and E2E tests with
+              Cypress ensure real-time sync remains reliable under load.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section" id="results-impact">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Results &amp; Impact</h2>
+            <p>
+              Teams using the app report a 40% reduction in status meetings and
+              a noticeable boost in sprint completion rates. Real-time presence
+              and automated reminders keep everyone aligned without micromanaging.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="project-section__inner project-cta">
+            <div>
+              <h2 class="project-section__title">Ready to Ship Your Next Idea?</h2>
+              <p>
+                Let's collaborate on intuitive productivity tools or transform
+                your product backlog into polished experiences.
+              </p>
+            </div>
+            <div class="project-cta__actions">
+              <a
+                class="project-button project-button--ghost"
+                href="../projects/ecommerce-platform.html"
+              >
+                <span class="material-symbols-outlined">chevron_left</span>
+                Previous Project
+              </a>
+              <a
+                class="project-button project-button--ghost"
+                href="../index.html#projects"
+                data-back-to-portfolio
+              >
+                <span class="material-symbols-outlined">arrow_back</span>
+                Back to Portfolio
+              </a>
+              <a
+                class="project-button project-button--ghost"
+                href="../projects/personal-blog.html"
+              >
+                Next Project
+                <span class="material-symbols-outlined">chevron_right</span>
+              </a>
+              <a
+                class="project-button project-button--primary"
+                href="mailto:hi@michallazicki.dev"
+              >
+                <span class="material-symbols-outlined">diversity_3</span>
+                Start a Project
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="project-footer">
+        © <span id="project-year"></span> Michał Łazicki. All rights reserved.
+      </footer>
+    </div>
+
+    <script type="module" src="../src/js/project-details.js"></script>
+    <script>
+      document.getElementById("project-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

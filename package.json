@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-v2",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Front-End Developer Portfolio - Converted from Tailwind to vanilla CSS with BEM naming",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "eslint": "^8.55.0"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "developer",
+    "vanilla-js",
+    "css",
+    "bem"
+  ],
+  "author": "John Doe",
+  "license": "MIT"
+}
+

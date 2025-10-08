@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="dark" data-theme="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Personal Blog | Project Details</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/styles/project-details.css" />
+  </head>
+  <body class="project-page">
+    <div class="project-layout">
+      <header class="project-header">
+        <div class="project-header__inner">
+          <div class="project-header__identity">
+            <span class="project-brand">Personal Blog</span>
+          </div>
+          <nav class="project-nav" aria-label="Project navigation">
+            <a
+              class="project-nav__link project-nav__link--back"
+              href="../index.html#projects"
+              data-back-to-portfolio
+            >
+              Back to Portfolio
+            </a>
+            <a
+              class="project-nav__link"
+              data-target="overview"
+              href="#overview"
+              aria-current="true"
+            >
+              Overview
+            </a>
+            <a
+              class="project-nav__link"
+              data-target="technology-stack"
+              href="#technology-stack"
+            >
+              Technology
+            </a>
+            <a
+              class="project-nav__link"
+              data-target="key-features"
+              href="#key-features"
+            >
+              Features
+            </a>
+            <a
+              class="project-nav__link"
+              data-target="visual-showcase"
+              href="#visual-showcase"
+            >
+              Gallery
+            </a>
+            <a
+              class="project-nav__link"
+              data-target="development-process"
+              href="#development-process"
+            >
+              Process
+            </a>
+            <a
+              class="project-nav__link"
+              data-target="results-impact"
+              href="#results-impact"
+            >
+              Results
+            </a>
+          </nav>
+          <div class="project-header__actions">
+            <button
+              class="project-theme-toggle"
+              id="theme-toggle"
+              type="button"
+              aria-label="Toggle theme"
+            >
+              <span class="material-symbols-outlined">light_mode</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="project-main">
+        <section class="project-section" id="overview">
+          <div class="project-section__inner project-hero">
+            <div class="project-hero__heading">
+              <h1 class="project-hero__title">Personal Blog</h1>
+              <p class="project-hero__subtitle">
+                A publication-ready blog that balances storytelling, code
+                snippets, and accessibility—crafted for fast iteration and
+                content ownership.
+              </p>
+              <div class="project-tags" aria-label="Technology tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">MDX</span>
+                <span class="project-tag">Vercel</span>
+                <span class="project-tag">Prism</span>
+              </div>
+            </div>
+            <div
+              class="project-hero__media"
+              role="img"
+              aria-label="Blog homepage showing featured articles"
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOMoqMNxTyF9Ho7HkCcppNokRljPleNLUUj5lcTt9JrkdutU8F8NZ3mGLxm92zxDCX1sL45IhHbCG2jP0DRBvhOAoNc8rIVXmurLQDSOglUHiW0D4hGMRIplposPsQ0TGh0VWUTG34yXsIaGxll2J7_jgRrZTFBxivaWX-M8qiCAzuarH632xe2vYQZK2UnpWxTYTnwtMEjrJAJi1XNONbt-7R3eYnExoM0JhQXSlR7bNEy5uitv987XKh4O-CXxD_0GKoUtoWK-7i');"
+            ></div>
+          </div>
+        </section>
+
+        <section class="project-section" id="project-overview">
+          <div class="project-section__inner project-body">
+            <p>
+              The blog serves as a living knowledge base for engineering notes
+              and long-form essays. I focused on authoring ergonomics, themeable
+              typography, and optimizations that keep Time to Interactive under
+              one second even with media-heavy content.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section" id="technology-stack">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Technology Stack</h2>
+            <p>
+              Built on Next.js with hybrid rendering for fast page loads and
+              SEO-friendly routes. Content is authored in MDX and synced from a
+              Git-based CMS. Syntax highlighting uses Prism with a custom theme,
+              while Vercel handles zero-config deployments and preview builds.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section" id="key-features">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Key Features</h2>
+            <div class="project-feature-list">
+              <article class="project-feature">
+                <h3>Authoring Workflow</h3>
+                <p>
+                  MDX components simplify embedding callouts, interactive demos,
+                  and code sandboxes without leaving the markdown flow.
+                </p>
+              </article>
+              <article class="project-feature">
+                <h3>Accessible Typography</h3>
+                <p>
+                  A modular scale, tuned contrast ratios, and reading-progress
+                  indicators help readers stay oriented on long articles.
+                </p>
+              </article>
+              <article class="project-feature">
+                <h3>Newsletter Integration</h3>
+                <p>
+                  Subscribers sync to ConvertKit via serverless functions,
+                  providing analytics and welcome sequences right after publish.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section" id="visual-showcase">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Visual Showcase</h2>
+            <div class="project-gallery">
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
+                alt="Developer desk with code editor and coffee mug"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1555529669-93c3d0cf64e3?auto=format&fit=crop&w=1200&q=80"
+                alt="Notebook with handwritten article outline"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=1600&q=80"
+                alt="Laptop displaying blog article with code block"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section" id="development-process">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Development Process</h2>
+            <p>
+              Typography studies informed the baseline styles before coding
+              began. Components were documented in Storybook, and performance
+              budgets were enforced with automated Lighthouse CI. Accessibility
+              checks using axe DevTools run on every pull request.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section" id="results-impact">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Results &amp; Impact</h2>
+            <p>
+              The blog consistently scores 95+ on Lighthouse for performance and
+              accessibility. Organic traffic doubled within three months thanks
+              to fast loads and structured metadata tailored for social sharing.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="project-section__inner project-cta">
+            <div>
+              <h2 class="project-section__title">Let’s Publish Something Great</h2>
+              <p>
+                Need a custom content platform or help evolving your design
+                system? I’d love to collaborate.
+              </p>
+            </div>
+            <div class="project-cta__actions">
+              <a
+                class="project-button project-button--ghost"
+                href="../projects/task-manager-app.html"
+              >
+                <span class="material-symbols-outlined">chevron_left</span>
+                Previous Project
+              </a>
+              <a
+                class="project-button project-button--ghost"
+                href="../index.html#projects"
+                data-back-to-portfolio
+              >
+                <span class="material-symbols-outlined">arrow_back</span>
+                Back to Portfolio
+              </a>
+              <a
+                class="project-button project-button--ghost"
+                href="../projects/ecommerce-platform.html"
+              >
+                Next Project
+                <span class="material-symbols-outlined">chevron_right</span>
+              </a>
+              <a
+                class="project-button project-button--primary"
+                href="mailto:hi@michallazicki.dev"
+              >
+                <span class="material-symbols-outlined">edit_note</span>
+                Discuss an Article
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="project-footer">
+        © <span id="project-year"></span> Michał Łazicki. All rights reserved.
+      </footer>
+    </div>
+
+    <script type="module" src="../src/js/project-details.js"></script>
+    <script>
+      document.getElementById("project-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
