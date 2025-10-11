@@ -127,8 +127,8 @@
 
   /* ===== Parallax ===== */
   --parallax-speed: 0.5;
-  --parallax-offset-top: -40%;
-  --parallax-offset-bottom: -60%;
+  --parallax-offset-top: -7%;
+  --parallax-offset-bottom: -50%;
 }
 
 [data-theme="light"] {
