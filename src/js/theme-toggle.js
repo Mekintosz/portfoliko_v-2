@@ -16,9 +16,16 @@ export function initThemeToggle() {
     return () => {};
   }
 
+  // Normalise legacy markup that used a `.dark` class alongside the data attribute.
+  htmlElement.classList.remove(DARK);
+
   const cleanupFns = [];
   const darkModeMedia = window.matchMedia("(prefers-color-scheme: dark)");
+  // Tracks whether the user explicitly chose a theme, preventing OS changes from overriding it.
   let userPreferenceLocked = false;
+
+  const getCurrentTheme = () =>
+    htmlElement.getAttribute("data-theme") === DARK ? DARK : LIGHT;
 
   const updateIcon = (theme) => {
     themeIcon.textContent = theme === DARK ? "light_mode" : "dark_mode";
@@ -27,7 +34,7 @@ export function initThemeToggle() {
 
   const applyTheme = (theme, { persist } = { persist: true }) => {
     const nextTheme = theme === DARK ? DARK : LIGHT;
-    htmlElement.classList.toggle(DARK, nextTheme === DARK);
+    // `data-theme` drives every theme-specific style, so we keep it as the single source of truth.
     htmlElement.setAttribute("data-theme", nextTheme);
     updateIcon(nextTheme);
 
@@ -38,6 +45,7 @@ export function initThemeToggle() {
   };
 
   const resolveInitialTheme = () => {
+    // Honour a stored preference first, otherwise fall back to the system setting.
     const storedTheme = localStorage.getItem(THEME_STORAGE_KEY);
     if (storedTheme === DARK || storedTheme === LIGHT) {
       userPreferenceLocked = true;
@@ -50,15 +58,17 @@ export function initThemeToggle() {
   };
 
   cleanupFns.push(
+    // Toggle theme whenever the user activates the button.
     addEventListenerWithCleanup(themeToggle, "click", (event) => {
       event.preventDefault();
-      const currentTheme = htmlElement.classList.contains(DARK) ? DARK : LIGHT;
+      const currentTheme = getCurrentTheme();
       const nextTheme = currentTheme === DARK ? LIGHT : DARK;
       applyTheme(nextTheme);
     })
   );
 
   cleanupFns.push(
+    // React to operating-system theme changes unless the user has made an explicit choice.
     addEventListenerWithCleanup(darkModeMedia, "change", (event) => {
       if (!userPreferenceLocked) {
         applyTheme(event.matches ? DARK : LIGHT, { persist: false });
@@ -67,6 +77,7 @@ export function initThemeToggle() {
   );
 
   cleanupFns.push(
+    // Keep multiple tabs/windows in sync when the theme is changed elsewhere.
     addEventListenerWithCleanup(window, "storage", (event) => {
       if (event.key !== THEME_STORAGE_KEY) return;
       if (event.newValue === DARK || event.newValue === LIGHT) {
