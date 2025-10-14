@@ -9,7 +9,7 @@ body.project-page {
   min-height: 100vh;
   font-family: var(--font-family-primary);
   background: var(--surface-body-background);
-  color: var(--color-text-primary);
+  color: var(--color-text-secondary);
 }
 
 .material-symbols-outlined {
@@ -28,7 +28,6 @@ body.project-page {
   z-index: var(--z-navigation);
   background: var(--surface-project-header-background);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--surface-project-header-border);
   transition: background var(--transition-normal);
 }
 
@@ -93,13 +92,13 @@ body.project-page {
 }
 
 .project-theme-toggle {
-  background: var(--surface-project-toggle-background);
-  color: var(--surface-project-toggle-foreground);
+  color: var(--color-text-secondary);
+  background: transparent;
   border: none;
   border-radius: var(--radius-full);
   padding: var(--spacing-xs);
   cursor: pointer;
-  transition: color var(--transition-fast), background var(--transition-fast);
+  transition: color var(--transition-fast);
 }
 
 .project-theme-toggle:hover,
@@ -140,7 +139,7 @@ body.project-page {
   font-size: clamp(2.5rem, 3vw + 1rem, 3.5rem);
   font-weight: var(--font-weight-black);
   letter-spacing: var(--letter-spacing-tight);
-  color: var(--surface-project-hero-title-color);
+  color: var(--color-text-primary);
 }
 
 .project-hero__subtitle {
@@ -181,7 +180,7 @@ body.project-page {
   padding: 0 var(--spacing-md);
   height: 32px;
   border-radius: var(--radius-full);
-  background: rgba(230, 164, 42, 0.15);
+  background: var(--color-tag-background);
   color: var(--color-primary);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
@@ -249,7 +248,8 @@ body.project-page {
   text-decoration: none;
   letter-spacing: var(--letter-spacing-normal);
   cursor: pointer;
-  transition: background var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+  transition: background var(--transition-fast), color var(--transition-fast),
+    transform var(--transition-fast);
 }
 
 .project-button--ghost {
@@ -266,7 +266,7 @@ body.project-page {
 .project-button--primary {
   border: none;
   background: var(--color-primary);
-  color: var(--color-primary-dark);
+  color: var(--color-primary-button-text);
 }
 
 .project-button--primary:hover,
