@@ -25,7 +25,18 @@
       <header class="header">
         <div class="header__container">
           <a href=""></a>
-          <nav class="header__nav">
+          <button
+            class="header__menu-toggle"
+            id="menu-toggle"
+            aria-expanded="false"
+            aria-controls="header-nav"
+            aria-label="Open menu"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true"
+              >menu</span
+            >
+          </button>
+          <nav class="header__nav" id="header-nav">
             <a class="header__nav-link" href="#home">Home</a>
             <a class="header__nav-link" href="#about">About</a>
             <a class="header__nav-link" href="#projects">Projects</a>
@@ -139,19 +150,23 @@
                     <img
                       alt="E-commerce Platform Mockup"
                       class="project__image"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsNwu9dNu1YUe_btEFqqkf4D8rRM6kcaF7p-LuPayGM8VTQlpodFYR0MAfjFHBnu4CqQsecw7HxP2rpLDnRO2soeMn4ZqWtABIrMX6irc96gh-2f8DkjRbP6giY7_yr4G_n0BkGbU6ajbmiTTkXe58f58yqhF4jP2vdtC4i8bcyMX1CtWhgsJ11P2pOUflOy3Sh8RTjCcDUnoAZtI9FROOmqHKMwYsc2gqznmJHuFbcQikCZlatAzzkBdB3YDQO695WFdGyHu8MenH"
+                      src="src/assets/onlaptop.webp"
                     />
                   </div>
                   <div class="project__content">
-                    <h3 class="project__title">E-commerce Platform</h3>
+                    <h3 class="project__title">Gotujto.pl</h3>
                     <p class="project__description">
-                      A feature-rich e-commerce platform built with React and
-                      Redux, designed for a seamless user experience.
+                      Gotujto is a modern, minimalist recipe library web
+                      application designed to help users browse, search, and
+                      organise recipes in a clean and intuitive interface. The
+                      project began as a static prototype (HTML + Tailwind CSS)
+                      and is evolving into a full React-based web application
+                      with routing, dynamic data, and user interactivity.
                     </p>
                     <div class="project-tags" aria-label="Technology tags">
                       <span class="project-tag">React</span>
-                      <span class="project-tag">Redux Toolkit</span>
-                      <span class="project-tag">TypeScript</span>
+                      <span class="project-tag">React Router</span>
+                      <span class="project-tag">Tailwind</span>
                       <span class="project-tag">Vite</span>
                     </div>
                     <a

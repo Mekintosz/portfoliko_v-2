@@ -114,6 +114,25 @@ body {
   padding: 0.5rem 1rem 0 0;
 }
 
+/* Mobile menu toggle button (hamburger/X) */
+.header__menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-left: var(--spacing-md);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-full);
+  color: var(--color-text-tertiary);
+  cursor: pointer;
+}
+
+.header__menu-toggle:hover {
+  color: var(--color-primary);
+}
+
 .header__theme-toggle:hover {
   color: var(--color-primary);
 }
@@ -853,8 +872,53 @@ body {
   transform: scale(1.25);
 }
 
+/* Mobile-first header nav is hidden and collapses with smooth transition */
 .header__nav {
-  display: none; /* Hide nav on mobile - could add hamburger menu later */
+  display: none;
+}
+
+.header__nav--open {
+  display: block;
+}
+
+/* Dropdown panel styles for mobile */
+@media (max-width: 767px) {
+  .header__container {
+    position: relative;
+  }
+
+  .header__menu-toggle {
+    display: inline-flex;
+  }
+
+  .header__nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: var(--surface-header-background);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--surface-header-border);
+    box-shadow: var(--shadow-sm);
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: max-height var(--transition-slow),
+      opacity var(--transition-normal), transform var(--transition-normal);
+  }
+
+  .header__nav.header__nav--open {
+    max-height: 420px; /* enough to show all links */
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .header__nav-link {
+    display: block;
+    padding: var(--spacing-md) var(--spacing-xl);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
 }
 
 /* Responsive Design */
@@ -893,6 +957,14 @@ body {
 
   .header__nav {
     display: flex;
+    position: static;
+    max-height: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .header__menu-toggle {
+    display: none;
   }
 
   .project {
