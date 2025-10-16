@@ -92,9 +92,11 @@
             <div class="project-hero__heading">
               <h1 class="project-hero__title">Gotujto.pl</h1>
               <p class="project-hero__subtitle">
-                A feature-rich online store built to deliver a seamless shopping
-                experience—from browsing curated collections to a frictionless
-                checkout flow.
+                Gotujto is a modern, minimalist recipe library web application
+                designed to help users browse, search, and organise recipes in a
+                clean and intuitive interface. The project began as a static
+                prototype and has evolved into a full React-based web
+                application with routing, dynamic data, and user interactivity.
               </p>
               <div class="project-tags" aria-label="Technology tags">
                 <span class="project-tag">React</span>
@@ -129,43 +131,71 @@
         <section class="project-section" id="technology-stack">
           <div class="project-section__inner">
             <h2 class="project-section__title">Technology Stack</h2>
-            <p>
-              The project uses a modular React/TypeScript setup bundled with
-              Vite. Redux Toolkit manages complex cart and authentication flows,
-              while react-query handles data fetching and caching. Styling is
-              powered by a custom component library built with vanilla CSS
-              tokens for predictable theming.
-            </p>
+            <h3>Current</h3>
+            <h4>Frontrnd</h4>
+            <ul>
+              <li>React via Vite for fast building</li>
+              <li>React Router - routing between library and recipe details</li>
+              <li>tailwind for utility firs styling</li>
+              <li>Google fonts and Material Icons</li>
+            </ul>
+            <h4>Data</h4>
+            <p>Static JSON for recipes (easy to expand later).</p>
+            <h4>Tooling</h4>
+            <ul>
+              <li>Node.js + npm for dependency management</li>
+              <li>ESLint + Prettier (recommended for consistency)</li>
+            </ul>
+            <h3>Possible backend (futrure)</h3>
+            <ul>
+              <li>Node/Express API with MongoDB or PostgreSQL</li>
+              <li>Authentication (Auth0, Firebase, or custom JWT)</li>
+              <li>
+                Cloud hosting (Vercel/Netlify for frontend, Railway/Render for
+                backend)
+              </li>
+            </ul>
           </div>
         </section>
 
         <section class="project-section" id="key-features">
           <div class="project-section__inner">
-            <h2 class="project-section__title">Key Features</h2>
+            <h2 class="project-section__title">App logic</h2>
             <div class="project-feature-list">
               <article class="project-feature">
-                <h3>Personalized Product Discovery</h3>
-                <p>
-                  Dynamic home and category pages adjust to browsing history,
-                  highlight trending items, and surface cross-sell bundles that
-                  increase average order value.
-                </p>
+                <h3>Recipe Library - clean grid layout of curated recipes.</h3>
               </article>
               <article class="project-feature">
-                <h3>Seamless Checkout Journey</h3>
-                <p>
-                  A multi-step checkout wizard with address validation, payment
-                  status feedback, and guest checkout support keeps conversion
-                  high on every device.
-                </p>
+                <h3>
+                  Search bar - filter by recipe name. ingredients, or tags.
+                </h3>
+                <p>Future - filter by ingridients or tags.</p>
               </article>
               <article class="project-feature">
-                <h3>Storefront Management Dashboard</h3>
-                <p>
-                  Admin tools let merchandisers manage inventory, launch
-                  campaigns, and monitor funnel metrics with real-time
-                  dashboards built on the same component system.
-                </p>
+                <h3>
+                  Categories - organise recipes (breakfast, lunch, dinner,
+                  snacks, etc.).
+                </h3>
+              </article>
+              <article class="project-feature">
+                <h3>
+                  PRecipe detail view - ingredients, instructions, nutrition
+                  info.
+                </h3>
+              </article>
+              <article class="project-feature">
+                <h3>
+                  Favourites - save recipes (via localStorage or backend later).
+                </h3>
+              </article>
+              <article class="project-feature">
+                <h3>Responsive UI - mobile-first, Tailwind-based.</h3>
+              </article>
+              <article class="project-feature">
+                <h3>Dark mode (planned).</h3>
+              </article>
+              <article class="project-feature">
+                <h3>ommunity features (future: sharing, comments, ratings).</h3>
               </article>
             </div>
           </div>

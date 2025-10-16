@@ -988,12 +988,12 @@ body {
   }
 
   .contact__content--left {
-    order: 1;
+    order: 2;
     text-align: center;
   }
 
   .contact__placeholder {
-    order: 2;
+    order: 1;
   }
 }
 
