@@ -191,6 +191,7 @@ body {
   padding: var(--spacing-2xl);
   background-color: var(--surface-hero-title-overlay);
   border-radius: var(--radius-xl);
+  backdrop-filter: blur(6px);
 }
 
 .hero__text-container {
@@ -888,6 +889,7 @@ body {
 
   .header__menu-toggle {
     display: inline-flex;
+    flex: 0;
   }
 
   .header__nav {
@@ -955,12 +957,17 @@ body {
     padding: var(--spacing-4xl) var(--spacing-3xl);
   }
 
+  .header__container {
+    justify-content: center;
+  }
+
   .header__nav {
     display: flex;
     position: static;
     max-height: none;
     opacity: 1;
     transform: none;
+    margin: 0 auto;
   }
 
   .header__menu-toggle {
