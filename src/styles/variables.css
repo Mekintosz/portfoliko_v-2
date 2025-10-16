@@ -20,7 +20,7 @@
 
   /* ===== Theme Surfaces (Dark Default) ===== */
   --surface-body-background: var(--color-background-animation);
-  --surface-header-background: rgba(36, 41, 47, 0.3);
+  --surface-header-background: rgba(16, 22, 29, 0.932);
   --surface-header-border: rgba(255, 255, 255, 0.08);
   --surface-hero-overlay: rgba(0, 0, 0, 0.432);
   --surface-hero-title-overlay: transparent;
