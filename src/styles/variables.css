@@ -13,10 +13,8 @@
   --color-background-hero: url(../assets/walkator-klMii3cR9iI-unsplash.jpg);
   --color-background-section: rgba(36, 41, 47, 0.5);
   --color-tag-background: rgb(36, 33, 2);
-  --color-background-input: rgb(30, 41, 59);
-  --color-background-placeholder: rgb(30, 41, 59);
+  --color-background-item: rgb(30, 41, 59);
   --color-background-footer: rgba(36, 41, 47, 0.5);
-  --color-background-skills-icon: rgb(11, 8, 44);
 
   /* ===== Theme Surfaces (Dark Default) ===== */
   --surface-body-background: var(--color-background-animation);
@@ -58,7 +56,6 @@
 
   /* ===== Navigation ===== */
   --color-nav-dot: rgb(100, 116, 139);
-  --color-nav-dot-active: var(--color-primary);
 
   /* ====Buttons==== */
   --color-primary-button-text: rgb(49, 43, 6);
@@ -141,13 +138,12 @@
   --color-primary-light-hover: rgba(94, 114, 228, 0.9);
   --color-background-hero: url(../assets/hero_background_light.png);
   --color-background-footer: none;
-  --color-background-input: rgba(255, 255, 255, 0.9);
+  --color-background-item: rgba(255, 255, 255, 0.9);
   --color-background-placeholder: rgb(255, 255, 255, 0.9);
   --color-card-light: #ffffff;
   --color-tag-background: rgb(216, 229, 236);
 
   --color-primary-button-text: rgb(229, 234, 240);
-  --color-background-skills-icon: rgb(234, 242, 248);
 
   --color-primary: rgb(94, 114, 228);
   --color-primary-transparent: rgba(94, 114, 228, 0.137);

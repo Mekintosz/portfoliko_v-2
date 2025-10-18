@@ -92,11 +92,10 @@
             <div class="project-hero__heading">
               <h1 class="project-hero__title">Gotujto.pl</h1>
               <p class="project-hero__subtitle">
-                Gotujto is a modern, minimalist recipe library web application
-                designed to help users browse, search, and organise recipes in a
-                clean and intuitive interface. The project began as a static
-                prototype and has evolved into a full React-based web
-                application with routing, dynamic data, and user interactivity.
+                Polished, localized recipe discovery for Polish-speaking food
+                enthusiasts. Responsive, image-rich UI with intuitive
+                navigation, contextual back-tracking, and focused search keeps
+                users immersed in everyday cooking inspiration.
               </p>
               <div class="project-tags" aria-label="Technology tags">
                 <span class="project-tag">React</span>
@@ -118,12 +117,29 @@
 
         <section class="project-section" id="project-overview">
           <div class="project-section__inner project-body">
+            <h2 class="project-section__title">Project Overview</h2>
             <p>
-              The platform reimagines product discovery for a specialty retail
-              brand. I was responsible for architecture, component
-              implementation, and creating a reliable state layer that keeps the
-              UI responsive while synchronizing inventory, user sessions, and
-              personalized recommendations in real time.
+              This project delivers a polished recipe discovery web application
+              tailored for Polish-speaking food enthusiasts. Visitors can browse
+              curated recipe collections, perform targeted searches, and dive
+              into detailed preparation guides. A responsive layout paired with
+              engaging imagery positions the platform as both inspirational and
+              practical for everyday cooking. The experience emphasizes
+              intuitive navigation, contextual back-tracking, and localized
+              content to keep users immersed in the culinary journey.
+            </p>
+            <h2 class="project-section__title">Project Description</h2>
+            <p>
+              Gotujto reimagines a traditional recipe portal through the lens of
+              modern frontend engineering. The objectives were to provide a
+              frictionless browsing experience, encourage exploration across
+              categories, and support power users with fast search and
+              filtering. Target users range from home cooks seeking dinner
+              inspiration to food lovers eager to save favorites and share
+              recommendations. Unique aspects include a fully localized
+              interface (labels, copy, and CTAs in Polish), a dynamic “Przepisy”
+              catalog that reflects popularity and freshness, and an “O nas”
+              microsite built from modular components for scalability.
             </p>
           </div>
         </section>
@@ -131,71 +147,62 @@
         <section class="project-section" id="technology-stack">
           <div class="project-section__inner">
             <h2 class="project-section__title">Technology Stack</h2>
-            <h3>Current</h3>
-            <h4>Frontrnd</h4>
             <ul>
-              <li>React via Vite for fast building</li>
-              <li>React Router - routing between library and recipe details</li>
-              <li>tailwind for utility firs styling</li>
-              <li>Google fonts and Material Icons</li>
-            </ul>
-            <h4>Data</h4>
-            <p>Static JSON for recipes (easy to expand later).</p>
-            <h4>Tooling</h4>
-            <ul>
-              <li>Node.js + npm for dependency management</li>
-              <li>ESLint + Prettier (recommended for consistency)</li>
-            </ul>
-            <h3>Possible backend (futrure)</h3>
-            <ul>
-              <li>Node/Express API with MongoDB or PostgreSQL</li>
-              <li>Authentication (Auth0, Firebase, or custom JWT)</li>
-              <li>
-                Cloud hosting (Vercel/Netlify for frontend, Railway/Render for
-                backend)
-              </li>
+              <li>JavaScript (ESNext)</li>
+              <li>React (functional components, hooks, context)</li>
+              <li>React Router DOM</li>
+              <li>Vite (build tooling)</li>
+              <li>Tailwind CSS utilities + custom design tokens</li>
+              <li>Material Symbols icon font</li>
+              <li>Node.js (for quick data augmentation scripts)</li>
+              <li>JSON-based recipe data source</li>
             </ul>
           </div>
         </section>
 
         <section class="project-section" id="key-features">
           <div class="project-section__inner">
-            <h2 class="project-section__title">App logic</h2>
+            <h2 class="project-section__title">Key Features &amp; Logic</h2>
             <div class="project-feature-list">
               <article class="project-feature">
-                <h3>Recipe Library - clean grid layout of curated recipes.</h3>
+                <h3>Fully localized interface</h3>
+                <p>Polish labels, copy, and CTAs across pages and flows.</p>
               </article>
               <article class="project-feature">
-                <h3>
-                  Search bar - filter by recipe name. ingredients, or tags.
-                </h3>
-                <p>Future - filter by ingridients or tags.</p>
+                <h3>Dynamic “Przepisy” catalog</h3>
+                <p>
+                  Lists reflect popularity and freshness to surface relevant
+                  content.
+                </p>
               </article>
               <article class="project-feature">
-                <h3>
-                  Categories - organise recipes (breakfast, lunch, dinner,
-                  snacks, etc.).
-                </h3>
+                <h3>Modular “O nas” microsite</h3>
+                <p>
+                  Composable sections built from scalable, reusable components.
+                </p>
               </article>
               <article class="project-feature">
-                <h3>
-                  PRecipe detail view - ingredients, instructions, nutrition
-                  info.
-                </h3>
+                <h3>Targeted search &amp; filtering</h3>
+                <p>
+                  Fast search with category exploration and future-ready
+                  filters.
+                </p>
               </article>
               <article class="project-feature">
-                <h3>
-                  Favourites - save recipes (via localStorage or backend later).
-                </h3>
-              </article>
-              <article class="project-feature">
-                <h3>Responsive UI - mobile-first, Tailwind-based.</h3>
-              </article>
-              <article class="project-feature">
-                <h3>Dark mode (planned).</h3>
-              </article>
-              <article class="project-feature">
-                <h3>ommunity features (future: sharing, comments, ratings).</h3>
+                <h3>Interesting app logic</h3>
+                <ul>
+                  <li>
+                    The back button on recipe detail pages inspects router state
+                    to return users to the originating context (homepage,
+                    category listing, or global feed) while preserving Polish
+                    diacritics.
+                  </li>
+                  <li>
+                    Popular and fresh recipe sections derive from one JSON
+                    source, sorting by views and publishedAt for an always-fresh
+                    homepage.
+                  </li>
+                </ul>
               </article>
             </div>
           </div>
@@ -223,25 +230,44 @@
 
         <section class="project-section" id="development-process">
           <div class="project-section__inner">
-            <h2 class="project-section__title">Development Process</h2>
+            <h2 class="project-section__title">Implementation &amp; Process</h2>
             <p>
-              The build followed an iterative delivery cycle. We began with UX
-              prototypes in Figma, established a shared design token system, and
-              then delivered components incrementally. Automated tests cover the
-              core cart logic and payment hand-offs, while Lighthouse audits
-              guard performance budgets every sprint.
+              Development began with restructuring legacy markup into reusable
+              React components and establishing page-level routing for
+              <code>/</code>, <code>/przepisy</code>,
+              <code>/kategoria/:slug</code>, <code>/przepisy/:id</code>,
+              <code>/favourites</code>, and <code>/o-nas</code>. Context hooks
+              centralize data fetching and favorites management, while
+              presentational components encapsulate styling and behavior.
+            </p>
+            <p>
+              Navigational UX required special handling: the header highlights
+              active routes, the hero CTA and sidebar respect localized slugs,
+              and recipe detail pages remember the originating view to provide
+              meaningful back actions. Implementing Polish-specific slugs
+              introduced encoding/decoding challenges when sharing category
+              context via router state; helper logic now normalizes and
+              prettifies category labels. The mobile menu implements animated
+              collapse behavior and icon toggling, keeping accessibility
+              attributes accurate.
             </p>
           </div>
         </section>
 
         <section class="project-section" id="results-impact">
           <div class="project-section__inner">
-            <h2 class="project-section__title">Results &amp; Impact</h2>
+            <h2 class="project-section__title">Results &amp; Learnings</h2>
             <p>
-              Launch metrics captured a 32% lift in conversion rate and a 24%
-              decrease in cart abandonment. The composable architecture now
-              supports regional storefronts without rewriting the experience,
-              unlocking rapid iteration for future campaigns.
+              The refactor produced a cohesive, multi-page SPA with fully
+              localized copy and consistent branding across sections. Popular
+              and newest recipe grids now respond to live metadata (views,
+              publication timestamps), reinforcing relevance for users. The work
+              deepened expertise in crafting resilient navigation flows with
+              React Router, managing shared state without heavy dependencies,
+              and translating static HTML designs into scalable component
+              architectures. Localization revealed nuances—such as preserving
+              diacritics across URLs and UI—that will inform future
+              internationalized projects.
             </p>
           </div>
         </section>
