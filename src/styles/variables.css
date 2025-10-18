@@ -9,12 +9,11 @@
 
   /* ===== Surface Colors ===== */
   --color-background-canvas: rgb(13, 12, 29);
-  --color-background-animation: rgb(16, 15, 31);
+  --color-background-body: rgb(16, 15, 31);
   --color-background-hero: url(../assets/walkator-klMii3cR9iI-unsplash.jpg);
   --color-background-section: rgba(36, 41, 47, 0.5);
   --color-tag-background: rgb(36, 33, 2);
   --color-background-item: rgb(30, 41, 59);
-  --color-background-footer: rgba(36, 41, 47, 0.5);
 
   /* ===== Theme Surfaces (Dark Default) ===== */
   --surface-body-background: var(--color-background-animation);
@@ -23,18 +22,12 @@
   --surface-hero-overlay: rgba(0, 0, 0, 0.432);
   --surface-hero-title-overlay: transparent;
   --surface-about-background: transparent;
-  --surface-feature-card-background: var(--color-card-dark);
-  --surface-feature-card-border: var(--color-border-dark);
-  --surface-projects-background: var(--color-background-section);
-  --surface-contact-background: var(--color-background-section);
+
   --surface-project-header-background: rgb(16, 15, 31, 0.725);
   --surface-project-header-border: rgba(255, 255, 255, 0.08);
   --surface-project-identity-color: var(--color-text-primary);
   --surface-project-feature-background: rgba(255, 255, 255, 0.04);
   --surface-project-feature-border: rgba(148, 163, 184, 0.1);
-
-  /* ===== Card Colors ===== */
-  --color-card-dark: rgb(46, 52, 59);
 
   /* ===== Text Colors ===== */
   --color-text-primary: rgb(210, 218, 230);
@@ -59,8 +52,6 @@
 
   /* ====Buttons==== */
   --color-primary-button-text: rgb(49, 43, 6);
-  --color-background-button-secondary: rgb(47, 50, 56);
-  --color-background-button-secondary-hover: rgb(37, 44, 53);
 
   /* ===== Typography ===== */
   --font-family-primary: "Urbanist", system-ui, -apple-system,
@@ -111,8 +102,7 @@
   --radius-full: 9999px;
 
   /* ===== Shadows ===== */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 10px 20px -16px rgba(0, 0, 0, 0.25);
   --shadow-focus: 0 0 0 3px rgba(255, 164, 0, 0.1);
 
   /* ===== Z-Index ===== */
@@ -137,10 +127,8 @@
 [data-theme="light"] {
   --color-primary-light-hover: rgba(94, 114, 228, 0.9);
   --color-background-hero: url(../assets/hero_background_light.png);
-  --color-background-footer: none;
   --color-background-item: rgba(255, 255, 255, 0.9);
   --color-background-placeholder: rgb(255, 255, 255, 0.9);
-  --color-card-light: #ffffff;
   --color-tag-background: rgb(216, 229, 236);
 
   --color-primary-button-text: rgb(229, 234, 240);
@@ -149,26 +137,17 @@
   --color-primary-transparent: rgba(94, 114, 228, 0.137);
   --color-primary-hover: var(--color-primary-light-hover);
   --color-background-canvas: rgb(195, 203, 216);
-  --color-background-animation: rgb(232, 236, 255);
+  --color-background-body: rgb(232, 236, 255);
   --color-text-primary: rgb(17, 21, 26);
   --color-text-secondary: rgb(36, 39, 48);
   --color-text-tertiary: rgb(43, 49, 58);
-  --color-border: rgb(229, 231, 235);
-  --color-border-footer: var(--color-border-light);
-  --color-background-section-light: rgba(255, 255, 255, 0.61);
+  --color-border: rgb(203, 207, 212);
+  --color-background-section: rgba(255, 255, 255, 0.61);
 
-  --color-background-button-secondary: rgb(235, 237, 241);
-  --color-background-button-secondary-hover: rgb(225, 230, 236);
-
-  --surface-body-background: var(--color-background-animation);
   --surface-header-background: rgba(237, 247, 253, 0.884);
   --surface-header-border: rgba(148, 163, 184, 0.2);
   --surface-hero-overlay: rgba(255, 255, 255, 0.178);
   --surface-hero-title-overlay: rgba(255, 255, 255, 0.452);
-  --surface-feature-card-background: var(--color-card-light);
-  --surface-feature-card-border: var(--color-border-light);
-  --surface-projects-background: var(--color-background-section-light);
-  --surface-contact-background: var(--color-background-section-light);
   --surface-project-header-background: rgba(246, 247, 248, 0.92);
   --surface-project-header-border: rgba(148, 163, 184, 0.2);
   --surface-project-identity-color: var(--color-primary-dark);

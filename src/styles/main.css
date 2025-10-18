@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: var(--font-family-primary);
-  background-color: var(--surface-body-background);
+  background-color: var(--color-background-body);
   color: var(--color-text-primary);
   line-height: var(--line-height-base);
 }
@@ -308,8 +308,8 @@ body {
 }
 
 .about__feature-card {
-  background-color: var(--surface-feature-card-background);
-  border: 1px solid var(--surface-feature-card-border);
+  background-color: var(--color-background-item);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   padding: var(--spacing-xl);
   text-align: center;
@@ -378,12 +378,12 @@ body {
 }
 
 .about__button--secondary {
-  background-color: var(--color-background-button-secondary);
+  background-color: var(--color-background-item);
   color: var(--color-text-tertiary);
 }
 
 .about__button--secondary:hover {
-  background-color: var(--color-background-button-secondary-hover);
+  background-color: var(--color-primary-transparent);
 }
 
 .about__button-text {
@@ -409,7 +409,7 @@ body {
 /* Projects Section */
 .projects {
   padding: var(--spacing-3xl) var(--spacing-xl);
-  background-color: var(--surface-projects-background);
+  background-color: var(--color-background-section);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -625,6 +625,7 @@ body {
 .skill-item__icon:hover {
   background-color: var(--color-primary-transparent);
   transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 .skill-item__icon:hover .skill-item__svg {
@@ -640,7 +641,7 @@ body {
 /* Contact Section */
 .contact {
   padding: var(--spacing-3xl) var(--spacing-xl);
-  background-color: var(--surface-contact-background);
+  background-color: var(--color-background-section);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -767,6 +768,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--color-background-item);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-sm);
   padding: var(--spacing-xl);
@@ -878,8 +880,8 @@ body {
   font-size: 10px;
   color: var(--color-primary-button-text);
   position: relative;
-  top: -8.6px;
-  left: 2.4px;
+  top: -8px;
+  left: 2.5px;
   z-index: 10;
 }
 

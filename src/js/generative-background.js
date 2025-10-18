@@ -108,11 +108,11 @@ export function initGenerativeBackground() {
 
   const refreshBackgroundFill = () => {
     backgroundFill = getCSSVariable(
-      "--color-background-animation",
+      "--color-background-body",
       "rgb(27, 21, 61)"
     );
     const canvasColor = getCSSVariable(
-      "--color-background-canvas",
+      "--color-background-body",
       backgroundFill
     );
     canvas.style.background = canvasColor;
@@ -195,7 +195,8 @@ export function initGenerativeBackground() {
     refreshBackgroundFill();
     const paletteColors = palette();
     particles.forEach((particle) => {
-      const nextColor = paletteColors[Math.floor(Math.random() * paletteColors.length)];
+      const nextColor =
+        paletteColors[Math.floor(Math.random() * paletteColors.length)];
       if (nextColor) {
         particle.color = nextColor;
       }
