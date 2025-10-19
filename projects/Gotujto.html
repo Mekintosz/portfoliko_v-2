@@ -119,27 +119,15 @@
           <div class="project-section__inner project-body">
             <h2 class="project-section__title">Project Overview</h2>
             <p>
-              This project delivers a polished recipe discovery web application
-              tailored for Polish-speaking food enthusiasts. Visitors can browse
-              curated recipe collections, perform targeted searches, and dive
-              into detailed preparation guides. A responsive layout paired with
-              engaging imagery positions the platform as both inspirational and
-              practical for everyday cooking. The experience emphasizes
-              intuitive navigation, contextual back-tracking, and localized
-              content to keep users immersed in the culinary journey.
-            </p>
-            <h2 class="project-section__title">Project Description</h2>
-            <p>
-              Gotujto reimagines a traditional recipe portal through the lens of
-              modern frontend engineering. The objectives were to provide a
-              frictionless browsing experience, encourage exploration across
-              categories, and support power users with fast search and
-              filtering. Target users range from home cooks seeking dinner
-              inspiration to food lovers eager to save favorites and share
-              recommendations. Unique aspects include a fully localized
-              interface (labels, copy, and CTAs in Polish), a dynamic “Przepisy”
-              catalog that reflects popularity and freshness, and an “O nas”
-              microsite built from modular components for scalability.
+              Gotujto is a modern rework of the traditional recipe website,
+              built with a focus on practical frontend architecture and user
+              experience. The project’s main goals were to make recipe browsing
+              smooth, enable quick exploration through categories, and provide
+              efficient search and filtering for frequent users. It serves both
+              casual home cooks looking for meal ideas and food enthusiasts who
+              want to save and organize their favorite recipes. The application
+              features a fully localized Polish interface, a dynamic “Przepisy”
+              catalog that updates based on popularity and recency,
             </p>
           </div>
         </section>
@@ -147,15 +135,29 @@
         <section class="project-section" id="technology-stack">
           <div class="project-section__inner">
             <h2 class="project-section__title">Technology Stack</h2>
-            <ul>
-              <li>JavaScript (ESNext)</li>
-              <li>React (functional components, hooks, context)</li>
-              <li>React Router DOM</li>
-              <li>Vite (build tooling)</li>
-              <li>Tailwind CSS utilities + custom design tokens</li>
-              <li>Material Symbols icon font</li>
-              <li>Node.js (for quick data augmentation scripts)</li>
-              <li>JSON-based recipe data source</li>
+            <ul class="tech-list">
+              <div class="tech-item">
+                <h3>Framework and Logic</h3>
+                <li>React (functional components, hooks, context)</li>
+                <li>React Router</li>
+                <li>JavaScript (React)</li>
+              </div>
+
+              <div class="tech-item">
+                <h3>Data</h3>
+                <li>JSON-based recipe data source</li>
+              </div>
+
+              <div class="tech-item">
+                <h3>Tooling</h3>
+                <li>Vite (build tooling)</li>
+                <li>Git and Github</li>
+              </div>
+
+              <div class="tech-item">
+                <h3>Styling</h3>
+                <li>Tailwind CSS utilities + custom design tokens</li>
+              </div>
             </ul>
           </div>
         </section>
@@ -289,27 +291,30 @@
                 <span class="material-symbols-outlined">chevron_left</span>
                 Previous Project
               </a>
-              <a
-                class="project-button project-button--ghost"
-                href="../index.html#projects"
-                data-back-to-portfolio
-              >
-                <span class="material-symbols-outlined">arrow_back</span>
-                Back to Portfolio
-              </a>
+              <div>
+                <a
+                  class="project-button project-button--ghost"
+                  href="../index.html#projects"
+                  data-back-to-portfolio
+                >
+                  <span class="material-symbols-outlined">arrow_back</span>
+                  Back to Portfolio
+                </a>
+                <a
+                  class="project-button project-button--primary"
+                  href="mailto:hi@michallazicki.dev"
+                >
+                  <span class="material-symbols-outlined">email</span>
+                  Contact Me
+                </a>
+              </div>
+
               <a
                 class="project-button project-button--ghost"
                 href="../projects/task-manager-app.html"
               >
                 Next Project
                 <span class="material-symbols-outlined">chevron_right</span>
-              </a>
-              <a
-                class="project-button project-button--primary"
-                href="mailto:hi@michallazicki.dev"
-              >
-                <span class="material-symbols-outlined">email</span>
-                Contact Me
               </a>
             </div>
           </div>

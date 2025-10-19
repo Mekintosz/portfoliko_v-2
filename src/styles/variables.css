@@ -35,10 +35,9 @@
   --color-text-tertiary: rgb(168, 178, 189);
 
   /* ===== Border Colors ===== */
-  --color-border: rgb(75, 85, 99);
+  --color-border: rgb(54, 61, 71);
   --color-border-focus: var(--color-primary);
   --color-border-footer: rgba(255, 255, 255, 0.1);
-  --color-border-dark: rgb(60, 68, 76);
 
   /* ===== Particle Palette ===== */
   --color-particle-1: #ffc107;

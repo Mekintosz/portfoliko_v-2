@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Black Olives — Restaurant Page | Project Details</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/styles/project-details.css" />
+  </head>
+  <body class="project-page">
+    <div class="project-layout">
+      <header class="project-header">
+        <div class="project-header__inner">
+          <div class="project-header__identity">
+            <span class="project-brand">Black Olives</span>
+          </div>
+          <nav class="project-nav" aria-label="Project navigation">
+            <a
+              class="project-nav__link project-nav__link--back"
+              href="../index.html#projects"
+              data-back-to-portfolio
+            >
+              Back to Portfolio
+            </a>
+            <a
+              class="project-nav__link"
+              data-target="overview"
+              href="#overview"
+              aria-current="true"
+              >Overview</a
+            >
+            <a
+              class="project-nav__link"
+              data-target="technology-stack"
+              href="#technology-stack"
+              >Tech</a
+            >
+            <a class="project-nav__link" data-target="features" href="#features"
+              >Features</a
+            >
+            <a
+              class="project-nav__link"
+              data-target="architecture"
+              href="#architecture"
+              >Architecture</a
+            >
+            <a
+              class="project-nav__link"
+              data-target="deployment"
+              href="#deployment"
+              >Deployment</a
+            >
+            <a class="project-nav__link" data-target="roadmap" href="#roadmap"
+              >Roadmap</a
+            >
+          </nav>
+          <div class="project-header__actions">
+            <a
+              class="project-button project-button--ghost"
+              href="https://mekintosz.github.io/black-olives"
+              target="_blank"
+              rel="noopener"
+              >Live Site</a
+            >
+            <a
+              class="project-button project-button--ghost"
+              href="https://github.com/Mekintosz/black-olives"
+              target="_blank"
+              rel="noopener"
+              >Repository</a
+            >
+            <button
+              class="project-theme-toggle"
+              id="theme-toggle"
+              type="button"
+              aria-label="Toggle theme"
+            >
+              <span class="material-symbols-outlined">light_mode</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="project-main">
+        <section class="project-section" id="overview">
+          <div class="project-section__inner project-hero">
+            <div class="project-hero__heading">
+              <h1 class="project-hero__title">
+                Black Olives — Restaurant Page
+              </h1>
+              <p class="project-hero__subtitle">
+                A responsive, visually rich, static website for a Mediterranean
+                restaurant with table booking UI, newsletter subscription, and
+                smooth, accessible navigation.
+              </p>
+              <div class="project-tags" aria-label="Technology tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Parcel</span>
+              </div>
+            </div>
+            <div
+              class="project-hero__media"
+              role="img"
+              aria-label="Restaurant landing page hero with overlayed navigation"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDnJuye--V4iOoM1AsT294iKFMGNp7e5XNopCJUbV_1MtG2XO4tSZxEZZMf_oHtM5uXERQohXXEwNT28iOP7K4e_WsFNLSQe3qIGZblHpLigrLa4fv6I8fqhSAcKYRL_ULvSunSEqZE48220Njr_5eCbY-AQtEfg62-fjnQFr1ZfrOGMJU4fvvMRoSsQ3zpjcr-3ZVt5jn6CaS3t_U45xdicxDfnXiq9s79zpljj2MQwV3TR3jKT9mPF960HVt_VXtMJOe-5AZpJt1U');
+              "
+            ></div>
+          </div>
+        </section>
+
+        <section class="project-section" id="project-overview">
+          <div class="project-section__inner project-body">
+            <h2 class="project-section__title">Project Overview</h2>
+            <ul>
+              <li>
+                <strong>Project name:</strong> Black Olives — Restaurant Page
+              </li>
+              <li>
+                <strong>Live site:</strong>
+                <a
+                  href="https://mekintosz.github.io/black-olives"
+                  target="_blank"
+                  rel="noopener"
+                  >black-olives (GitHub Pages)</a
+                >
+              </li>
+              <li>
+                <strong>Repository:</strong>
+                <a
+                  href="https://github.com/Mekintosz/black-olives"
+                  target="_blank"
+                  rel="noopener"
+                  >github.com/Mekintosz/black-olives</a
+                >
+              </li>
+              <li>
+                <strong>One-liner:</strong> Responsive static site with booking
+                UI, newsletter, and smooth navigation.
+              </li>
+              <li>
+                <strong>Primary users:</strong> Prospective diners exploring
+                brand, menu, chef, location, booking.
+              </li>
+              <li>
+                <strong>Goals:</strong> Communicate brand identity, showcase
+                venue/chef, entry point to booking, capture newsletter signups.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="project-section" id="features">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Features</h2>
+            <div class="project-feature-list">
+              <article class="project-feature">
+                <h3>Responsive layout</h3>
+                <p>
+                  Mobile-first CSS Grid/Flexbox with media queries; hero image
+                  with overlayed navigation; scales up to desktop.
+                </p>
+              </article>
+              <article class="project-feature">
+                <h3>Accessible, smooth navigation</h3>
+                <p>
+                  Fixed header with anchor links; mobile menu toggles with
+                  aria-expanded/aria-label, closes on Escape; smooth scrolling;
+                  body scroll lock when open.
+                </p>
+              </article>
+              <article class="project-feature">
+                <h3>Table booking</h3>
+                <p>
+                  Dedicated <code>book-table.html</code> with form validation
+                  (future date, closed Mondays, seats range checks).
+                </p>
+              </article>
+              <article class="project-feature">
+                <h3>Newsletter subscription</h3>
+                <p>
+                  Inline form for name/email styled consistently with booking;
+                  currently posts to <code>#</code>.
+                </p>
+              </article>
+              <article class="project-feature">
+                <h3>Location &amp; contact</h3>
+                <p>
+                  OpenStreetMap iframe, prominent contact details, and footer
+                  repeats.
+                </p>
+              </article>
+              <article class="project-feature">
+                <h3>Performance &amp; media</h3>
+                <p>
+                  WebP images, lazy loading, SVG icons/logos, embedded PDF menu.
+                </p>
+              </article>
+              <article class="project-feature">
+                <h3>Semantic HTML</h3>
+                <p>Landmarks and labeled controls for basic SEO and a11y.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section" id="technology-stack">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Tech Stack</h2>
+            <div class="tech-item">
+              <h3>Frontend</h3>
+              <ul class="tech-list">
+                <li>JavaScript (ES modules), HTML5, CSS3</li>
+                <li>
+                  Module structure: <code>src/index.js</code> imports
+                  <code>modules/nav.js</code> and
+                  <code>modules/bookingDate.js</code>
+                </li>
+                <li>
+                  Styling: single CSS with custom properties and media queries
+                </li>
+                <li>Fonts: Google Fonts (Libre Bodoni, Libre Caslon Text)</li>
+              </ul>
+            </div>
+            <div class="tech-item">
+              <h3>Tooling &amp; Build</h3>
+              <ul class="tech-list">
+                <li>Bundler: Parcel 2 (dev/build)</li>
+                <li>Package manager: npm scripts</li>
+                <li>
+                  Deployment: <code>gh-pages</code> package to publish dist
+                </li>
+              </ul>
+            </div>
+            <div class="tech-item">
+              <h3>Hosting &amp; Services</h3>
+              <ul class="tech-list">
+                <li>Static hosting: GitHub Pages</li>
+                <li>Map: OpenStreetMap iframe</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section" id="architecture">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Architecture</h2>
+            <ul>
+              <li>Container: static site served by GitHub Pages</li>
+              <li>
+                Pages: <code>index.html</code>, <code>book-table.html</code>
+              </li>
+              <li>
+                Assets: images (WebP/PNG/SVG), <code>Current-menu.pdf</code>
+              </li>
+              <li>
+                Scripts: <code>index.js</code> initializes modules on
+                DOMContentLoaded
+              </li>
+              <li>
+                Navigation module toggles menu and scroll lock; booking module
+                validates date
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="project-section" id="deployment">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Deployment</h2>
+            <ul>
+              <li>Enable GitHub Pages from <em>gh-pages</em> branch</li>
+              <li>
+                Build with <code>--public-url ./</code> for relative paths
+              </li>
+              <li>
+                Optional: GitHub Actions to build on main and publish to
+                gh-pages
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="project-section" id="roadmap">
+          <div class="project-section__inner">
+            <h2 class="project-section__title">Development Roadmap</h2>
+            <div class="project-feature-list">
+              <article class="project-feature">
+                <h3>Short-term</h3>
+                <ul>
+                  <li>Smoother mobile nav animation and icon transitions</li>
+                  <li>Improve booking layout on small screens</li>
+                  <li>Integrate mock/serverless backend for forms</li>
+                  <li>Add Playwright smoke tests</li>
+                </ul>
+              </article>
+              <article class="project-feature">
+                <h3>Medium-term</h3>
+                <ul>
+                  <li>Backend endpoints with validation and notifications</li>
+                  <li>Persist bookings/subscriptions (Supabase/Airtable)</li>
+                  <li>Analytics and basic SEO improvements</li>
+                </ul>
+              </article>
+              <article class="project-feature">
+                <h3>Non-goals &amp; Future Work</h3>
+                <p>
+                  Full backend/CMS/auth are out of scope for now. Future:
+                  serverless forms, admin dashboard, CMS, CI, automated image
+                  pipeline.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="project-section__inner project-cta">
+            <div>
+              <h2 class="project-section__title">Explore More Work</h2>
+              <p>See the repository or get in touch for a walkthrough.</p>
+            </div>
+            <div class="project-cta__actions">
+              <a
+                class="project-button project-button--ghost"
+                href="../projects/Gotujto.pl.html"
+              >
+                <span class="material-symbols-outlined">chevron_left</span>
+                Previous Project
+              </a>
+              <a
+                class="project-button project-button--ghost"
+                href="../index.html#projects"
+                data-back-to-portfolio
+              >
+                <span class="material-symbols-outlined">arrow_back</span>
+                Back to Portfolio
+              </a>
+              <a
+                class="project-button project-button--primary"
+                href="mailto:hi@michallazicki.dev"
+              >
+                <span class="material-symbols-outlined">email</span>
+                Contact Me
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="project-footer">
+        © <span id="project-year"></span> Michał Łazicki. All rights reserved.
+      </footer>
+    </div>
+
+    <script type="module" src="../src/js/project-details.js"></script>
+    <script>
+      document.getElementById("project-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
