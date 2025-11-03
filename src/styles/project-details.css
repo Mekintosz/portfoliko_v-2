@@ -142,6 +142,12 @@ body.project-page {
   gap: var(--spacing-2xl);
 }
 
+.project-hero__buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
 .project-hero__title {
   font-size: clamp(2.5rem, 3vw + 1rem, 3.5rem);
   font-weight: var(--font-weight-black);

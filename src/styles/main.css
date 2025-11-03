@@ -483,6 +483,12 @@ body {
   max-width: 448px;
 }
 
+.project__buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
 .project__button {
   display: inline-flex;
   align-items: center;
@@ -505,6 +511,15 @@ body {
 
 .project__button:hover {
   background-color: var(--color-primary-hover);
+}
+
+.project__button--secondary {
+  background-color: var(--color-background-item);
+  color: var(--color-text-tertiary);
+}
+
+.project__button--secondary:hover {
+  background-color: var(--color-primary-transparent);
 }
 
 .project-tags {
