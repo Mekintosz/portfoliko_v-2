@@ -36,5 +36,5 @@ design_source/
 # OS generated files
 Thumbs.db
 
-
-
+# Warp-specific
+WARP.md
