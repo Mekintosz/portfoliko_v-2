@@ -63,7 +63,8 @@ body {
 }
 
 .main--with-navbar {
-  padding-top: 0; /* No padding needed for non-fixed navbar */
+  padding-top: 0;
+  /* No padding needed for non-fixed navbar */
 }
 
 /* Header */
@@ -251,6 +252,7 @@ body {
 
 .hero__cta:hover {
   background-color: var(--color-primary-hover);
+  box-shadow: 0 0 20px var(--color-primary-transparent);
 }
 
 .hero__cta-text {
@@ -316,6 +318,26 @@ body {
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-bounce);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.about__feature-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.about__feature-card:hover::before {
+  opacity: 1;
 }
 
 .about__feature-card:hover {
@@ -375,6 +397,7 @@ body {
 
 .about__button--primary:hover {
   background-color: var(--color-primary-hover);
+  box-shadow: 0 0 15px var(--color-primary-transparent);
 }
 
 .about__button--secondary {
@@ -441,6 +464,13 @@ body {
   grid-template-columns: 1fr;
   gap: var(--spacing-3xl);
   align-items: center;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-2xl);
+  transition: background-color var(--transition-normal);
+}
+
+.project:hover {
+  background-color: rgba(255, 255, 255, 0.02);
 }
 
 .project__image-container {
@@ -803,6 +833,7 @@ body {
   gap: var(--spacing-md);
   font-weight: var(--font-weight-normal);
   align-items: center;
+
   & a {
     text-decoration: none;
     color: var(--color-text-primary);
@@ -939,7 +970,8 @@ body {
   }
 
   .header__nav.header__nav--open {
-    max-height: 420px; /* enough to show all links */
+    max-height: 420px;
+    /* enough to show all links */
     opacity: 1;
     transform: translateY(0);
   }
@@ -1041,9 +1073,11 @@ body {
   .about__features {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .skills__grid {
     gap: var(--spacing-5xl);
   }
+
   .hero__title {
     font-size: var(--font-size-6xl);
   }
@@ -1059,4 +1093,17 @@ body {
   .skills__grid {
     gap: var(--spacing-5xl);
   }
+}
+
+/* Scroll Animations */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition-scroll), transform var(--transition-scroll);
+  will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
