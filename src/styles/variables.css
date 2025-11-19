@@ -8,8 +8,10 @@
   --color-primary-transparent: rgba(230, 164, 42, 0.5);
 
   /* ===== Surface Colors ===== */
-  --color-background-canvas: rgb(13, 12, 29);
-  --color-background-body: rgb(16, 15, 31);
+  --color-background-canvas: transparent;
+  --color-background-body: radial-gradient(circle at 50% 0%,
+      rgb(28, 27, 46) 0%,
+      rgb(16, 15, 31) 100%);
   --color-background-hero: url(../assets/walkator-klMii3cR9iI-unsplash.jpg);
   --color-background-section: rgba(36, 41, 47, 0.5);
   --color-tag-background: rgb(36, 33, 2);

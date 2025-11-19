@@ -79,13 +79,13 @@ export function initGenerativeBackground() {
   const canvas = document.getElementById("generative-background");
   if (!canvas) {
     console.warn("Generative background skipped: canvas element missing.");
-    return () => {};
+    return () => { };
   }
 
   const ctx = canvas.getContext("2d");
   if (!ctx) {
     console.error("Canvas context is not available for generative background.");
-    return () => {};
+    return () => { };
   }
 
   let width = window.innerWidth;
@@ -107,15 +107,8 @@ export function initGenerativeBackground() {
   ];
 
   const refreshBackgroundFill = () => {
-    backgroundFill = getCSSVariable(
-      "--color-background-body",
-      "rgb(27, 21, 61)"
-    );
-    const canvasColor = getCSSVariable(
-      "--color-background-body",
-      backgroundFill
-    );
-    canvas.style.background = canvasColor;
+    // Background is handled by CSS
+    canvas.style.background = "transparent";
   };
 
   const targetParticleCount = () => {
@@ -146,8 +139,7 @@ export function initGenerativeBackground() {
   };
 
   const drawFrame = () => {
-    ctx.fillStyle = backgroundFill;
-    ctx.fillRect(0, 0, width, height);
+    ctx.clearRect(0, 0, width, height);
 
     particles.forEach((particle) => {
       particle.update(pointer);
