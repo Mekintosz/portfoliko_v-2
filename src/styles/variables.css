@@ -8,15 +8,35 @@
   --color-primary-transparent: rgba(230, 164, 42, 0.5);
 
   /* ===== Surface Colors ===== */
-  --color-background-canvas: rgb(13, 12, 29);
-  --color-background-body: rgb(16, 15, 31);
+  --color-background-canvas: transparent;
+  --color-background-body: linear-gradient(
+    to right top,
+    #250e1b,
+    #230e1d,
+    #210e1f,
+    #1e0e21,
+    #1b0e23,
+    #1d0c20,
+    #1f0b1c,
+    #200a19,
+    #21090f,
+    #1f0b05,
+    #1a0d01,
+    #140e02
+  );
+
   --color-background-hero: url(../assets/walkator-klMii3cR9iI-unsplash.jpg);
   --color-background-section: rgba(36, 41, 47, 0.5);
   --color-tag-background: rgb(36, 33, 2);
   --color-background-item: rgb(30, 41, 59);
 
   /* ===== Theme Surfaces (Dark Default) ===== */
-  --surface-body-background: var(--color-background-animation);
+  --surface-body-background: radial-gradient(
+    circle,
+    rgba(42, 29, 92, 1) 15%,
+    rgba(22, 10, 84, 1) 53%,
+    rgba(6, 7, 59, 1) 91%
+  );
   --surface-header-background: rgba(16, 22, 29, 0.932);
   --surface-header-border: rgba(255, 255, 255, 0.08);
   --surface-hero-overlay: rgba(0, 0, 0, 0.432);
@@ -116,6 +136,7 @@
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
   --transition-bounce: 0.3s ease-in-out;
+  --transition-scroll: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 
   /* ===== Parallax ===== */
   --parallax-speed: 0.5;
@@ -136,7 +157,21 @@
   --color-primary-transparent: rgba(94, 114, 228, 0.137);
   --color-primary-hover: var(--color-primary-light-hover);
   --color-background-canvas: rgb(195, 203, 216);
-  --color-background-body: rgb(232, 236, 255);
+  --color-background-body: linear-gradient(
+    to right bottom,
+    #f0efe7,
+    #f2ebe4,
+    #f4e8e3,
+    #f3e4e5,
+    #efe2e8,
+    #ede0ea,
+    #e8deed,
+    #e1ddf0,
+    #dedbf4,
+    #dbd8f7,
+    #d7d6fb,
+    #d3d4ff
+  );
   --color-text-primary: rgb(17, 21, 26);
   --color-text-secondary: rgb(36, 39, 48);
   --color-text-tertiary: rgb(43, 49, 58);

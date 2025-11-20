@@ -5,6 +5,7 @@ import { initGenerativeBackground } from "./generative-background.js";
 import { initParallaxEffect } from "./parallax.js";
 import { initThemeToggle } from "./theme-toggle.js";
 import { initMobileMenu } from "./mobile-menu.js";
+import { initScrollAnimations } from "./scroll-animations.js";
 
 const modules = [
   { name: "navigation", initializer: initNavigation },
@@ -12,6 +13,7 @@ const modules = [
   { name: "parallax", initializer: initParallaxEffect },
   { name: "theme-toggle", initializer: initThemeToggle },
   { name: "mobile-menu", initializer: initMobileMenu },
+  { name: "scroll-animations", initializer: initScrollAnimations },
 ];
 
 const initialiseModules = () => {
